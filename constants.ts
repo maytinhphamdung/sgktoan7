@@ -1,4 +1,5 @@
 
+
 import { Chapter, ContentPartType } from './types';
 
 export const TEXTBOOK_DATA: Chapter[] = [
@@ -27,22 +28,22 @@ export const TEXTBOOK_DATA: Chapter[] = [
 
 *   $x$ là một phần tử của tập $A$, kí hiệu là $x \\in A$ (đọc là $x$ thuộc $A$).
 *   $y$ không là phần tử của tập $A$, kí hiệu là $y \\notin A$ (đọc là $y$ không thuộc $A$).` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa Tập hợp, Hình 1.3', imageUrl: 'https://picsum.photos/300/200?random=1', alt: 'Minh họa Tập hợp, Hình 1.3' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa Tập hợp, Hình 1.3', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/tap-hop-hinh1.3.png?v=1718873752535', alt: 'Minh họa Tập hợp, Hình 1.3' },
           { type: ContentPartType.NOTE, label: 'Chú ý', value: 'Khi $x$ thuộc $A$, ta còn nói "$x$ nằm trong $A$", hay "$A$ chứa $x$".' },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: 'Với tập hợp $M$ trên Hình 1.3, ta có $4 \\in M$, $1 \\in M$, $7 \\notin M$.' },
           { type: ContentPartType.EXERCISE, label: 'Luyện tập 1', value: 'Gọi $B$ là tập hợp các bạn tổ trưởng trong lớp em. Em hãy chỉ ra một bạn thuộc tập $B$ và một bạn không thuộc tập $B$.' },
           { type: ContentPartType.HEADING_PRIMARY, value: '2. MÔ TẢ MỘT TẬP HỢP' },
           { type: ContentPartType.TEXT, value: `Mô tả một tập hợp là cho biết cách xác định các phần tử của tập hợp đó. Ta thường dùng hai cách mô tả tập hợp sau:
 
-**Cách 1: Liệt kê các phần tử của tập hợp, tức là viết các phần tử của tập hợp trong dấu ngoặc { } (theo thứ tự tùy ý nhưng mỗi phần tử chỉ được viết một lần).**` },
+**Cách 1: Liệt kê các phần tử của tập hợp, tức là viết các phần tử của tập hợp trong dấu ngoặc \\{ \\} (theo thứ tự tùy ý nhưng mỗi phần tử chỉ được viết một lần).**` },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: 'Với tập $P$ gồm các số $0; 1; 2; 3; 4; 5$ ở Hình 1.4, ta viết:\n$P = \\{0; 1; 2; 3; 4; 5\\}$.' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa Tập hợp, Hình 1.4', imageUrl: 'https://picsum.photos/300/200?random=2', alt: 'Minh họa Tập hợp, Hình 1.4' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa Tập hợp, Hình 1.4', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/tap-hop-hinh1.4.png?v=1718873760980', alt: 'Minh họa Tập hợp, Hình 1.4' },
           { type: ContentPartType.TEXT, value: `**Cách 2: Nêu dấu hiệu đặc trưng cho các phần tử của tập hợp**` },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: 'Với tập $P$ (xem H.1.4) ta có thể viết:\n$P = \\{n \\mid n$ là số tự nhiên nhỏ hơn $6\\}$.' },
           { type: ContentPartType.NOTE, label: 'Chú ý', value: `
-*   Gọi $N$ là tập hợp gồm các số tự nhiên $0; 1; 2; 3; ...$. Ta có thể viết tập $N = \\{0; 1; 2; 3; ...\\}$.
+*   Gọi $N$ là tập hợp gồm các số tự nhiên $0; 1; 2; 3; \\dots$. Ta có thể viết tập $N = \\{0; 1; 2; 3; \\dots\\}$.
 *   Ta viết $n \\in N$ có nghĩa $n$ là một số tự nhiên. Chẳng hạn, tập $P$ các số tự nhiên nhỏ hơn $6$ có thể viết là:\n$P = \\{n \\in N \\mid n < 6\\}$ hoặc $P = \\{n \\in N \\mid n \\le 5\\}$.
-*   Ta còn dùng kí hiệu $N^*$ để chỉ tập hợp các số tự nhiên khác $0$, nghĩa là $N^* = \\{1; 2; 3; ...\\}$.` },
+*   Ta còn dùng kí hiệu $N^*$ để chỉ tập hợp các số tự nhiên khác $0$, nghĩa là $N^* = \\{1; 2; 3; \\dots\\}$.` },
           { type: ContentPartType.EXERCISE, label: 'Luyện tập 2', value: `Viết các tập hợp sau bằng cách liệt kê các phần tử của chúng:
 $A = \\{x \\in N \\mid x < 5\\}$;
 $B = \\{x \\in N^* \\mid x < 5\\}$.` },
@@ -70,14 +71,14 @@ Con người biết đến toán học từ hàng nghìn năm trước Công ngu
 **Tập hữu hạn và tập vô hạn**
 Ta thấy:
 Tập $X = \\{x; y\\}$ có $2$ phần tử.
-Tập $Y = \\{1; 2; 3; ...; 50\\}$ có $50$ phần tử.
+Tập $Y = \\{1; 2; 3; \\dots; 50\\}$ có $50$ phần tử.
 $X$ và $Y$ là những tập hợp có một số hữu hạn phần tử. Ta gọi chúng là những tập hữu hạn.
 Khác với tập $X, Y$, tập hợp có vô số phần tử là tập vô hạn. Tập $N$ là tập vô hạn.
 
 **Giao của hai tập hợp**
 Gọi $C$ là tập hợp gồm các phần tử chung của hai tập $A$ và $B$.
 Ta gọi tập $C$ là giao của hai tập $A$ và $B$, kí hiệu $C = A \\cap B$.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa Georg Cantor', imageUrl: 'https://picsum.photos/300/200?random=3', alt: 'Minh họa Georg Cantor' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa Georg Cantor', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/georg-cantor.png?v=1718873767228', alt: 'Minh họa Georg Cantor' },
           { type: ContentPartType.QUIZ, quiz: {
             id: 'quiz-1-1-1',
             label: 'Kiểm tra kiến thức Bài 1: Tập Hợp',
@@ -154,7 +155,7 @@ Ta gọi tập $C$ là giao của hai tập $A$ và $B$, kí hiệu $C = A \\cap
 *   Khi viết các số tự nhiên, ta quy ước:
     1. Với các số tự nhiên khác $0$, chữ số đầu tiên (từ trái sang phải) khác $0$.
     2. Để dễ đọc, đối với các số có bốn chữ số trở lên, ta viết tách riêng từng lớp. Mỗi lớp là một nhóm ba chữ số kể từ phải sang trái.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa bảng chữ số La Mã', imageUrl: 'https://picsum.photos/400/200?random=4', alt: 'Minh họa bảng chữ số La Mã' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa bảng chữ số La Mã', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/bang-chu-so-la-ma.png?v=1718873784110', alt: 'Minh họa bảng chữ số La Mã' },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ 1', value: `
 *   **HD1** Trong $32\\ 019$, ta thấy:
     "Chữ số $2$ nằm ở hàng nghìn và có giá trị bằng $2 \\times 1\\ 000 = 2\\ 000$".
@@ -182,10 +183,10 @@ Trong đó: $ \\overline{ab} $ là kí hiệu số tự nhiên có hai chữ s�
     | - | -- | --- | -- | - | -- | --- | ---- | -- | - |
     | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 
-*   **Để biểu diễn các số từ 11 đến 20**, ta thêm X vào bên trái mỗi số từ 1 đến 9: XI, XII, ..., XX.
+*   **Để biểu diễn các số từ 11 đến 20**, ta thêm X vào bên trái mỗi số từ 1 đến 9: XI, XII, \\dots, XX.
 
-*   **Để biểu diễn các số từ 21 đến 30**, ta thêm XX vào bên trái mỗi số từ 1 đến 9: XXI, XXII, ..., XXX.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa đồng tiền Việt Nam', imageUrl: 'https://picsum.photos/400/200?random=5', alt: 'Minh họa đồng tiền Việt Nam' },
+*   **Để biểu diễn các số từ 21 đến 30**, ta thêm XX vào bên trái mỗi số từ 1 đến 9: XXI, XXII, \\dots, XXX.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa đồng tiền Việt Nam', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/dong-tien-viet.png?v=1718873796845', alt: 'Minh họa đồng tiền Việt Nam' },
           { type: ContentPartType.NOTE, label: 'Nhận xét', value: `
 1.  Mỗi số La Mã biểu diễn một số tự nhiên bằng tổng giá trị của các phần viết nên số đó. Chẳng hạn, số XXIV có ba phần là X, X và IV tương ứng với các giá trị 10, 10 và 4. Do đó XXIV biểu diễn số 24.
 2.  Không có số La Mã nào biểu diễn số 0.` },
@@ -210,7 +211,7 @@ Ví dụ, số MMXIX gồm bốn thành phần là M, M, X và IX tương ứng 
 **Ghi số trong hệ nhị phân**
 Để ghi số trong hệ nhị phân, ta chỉ dùng hai chữ số là 0 và 1. Mỗi số tự nhiên được viết dưới dạng một dãy chữ số chỉ gồm là 0 và 1. Chẳng hạn, trong hệ nhị phân, hai số 100 và 1 001 lần lượt biểu diễn số 4 và 9 trong hệ thập phân.
 Hai chữ số 1 và 0 tương ứng với hai trạng thái "đóng" và "mở" của mạch điện. Do đó hệ nhị phân được sử dụng nhiều trong khoa học máy tính.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa hệ nhị phân', imageUrl: 'https://picsum.photos/400/200?random=6', alt: 'Minh họa hệ nhị phân' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa hệ nhị phân', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/he-nhi-phan.png?v=1718873804860', alt: 'Minh họa hệ nhị phân' },
         ],
       },
       {
@@ -232,7 +233,7 @@ $$
 \\begin{array}{ccccccc}\\circ & \\circ & \\circ & \\circ & \\circ & \\circ & \\dots \\cr 0 & 1 & 2 & 3 & 4 & 5 & \\dots\\end{array}
 $$
 Trên tia số, điểm biểu diễn số tự nhiên $a$ gọi là điểm $a$. Chẳng hạn, điểm $3$, điểm $6$, ...` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa tia số', imageUrl: 'https://picsum.photos/400/200?random=7', alt: 'Minh họa tia số' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa tia số', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/tia-so.png?v=1718873812745', alt: 'Minh họa tia số' },
           { type: ContentPartType.EXAMPLE, label: 'HD1', value: 'Trong hai điểm $5$ và $8$ trên tia số, điểm nào nằm bên trái, điểm nào nằm bên phải điểm kia?' },
           { type: ContentPartType.EXAMPLE, label: 'HD2', value: 'Điểm biểu diễn số tự nhiên nào nằm ngay bên trái điểm $8$?' },
           { type: ContentPartType.EXAMPLE, label: 'HD3', value: 'Cho $n$ là một số tự nhiên nhỏ hơn $7$. Theo em, điểm $n$ nằm bên trái hay bên phải điểm $7$?' },
@@ -251,7 +252,7 @@ b) Trên tia số (nằm ngang), hai điểm $m$ và $n$, điểm nào nằm tr�
 Số tiền thu được vào buổi sáng nhiều hơn vào buổi chiều;
 Số tiền thu được vào buổi tối ít hơn vào buổi chiều.
 Hãy so sánh số tiền thu được (đều là các số tự nhiên) của cửa hàng đó vào buổi sáng và buổi tối.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa so sánh số', imageUrl: 'https://picsum.photos/400/200?random=8', alt: 'Minh họa so sánh số' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa so sánh số', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/so-sanh-so.png?v=1718873820258', alt: 'Minh họa so sánh số' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'Các kí hiệu "<" và ">"' },
           { type: ContentPartType.TEXT, value: `
 *   Ta còn dùng kí hiệu $a \\le b$ (đọc là "$a$ nhỏ hơn hoặc bằng $b$") để nói "$a$ không lớn hơn $b$".
@@ -268,6 +269,148 @@ a) $M = \\{x \\in N \\mid 10 \\le x < 15\\}$;
 b) $K = \\{x \\in N^* \\mid x \\le 3\\}$;
 c) $L = \\{x \\in N \\mid x \\le 3\\}$.` },
           { type: ContentPartType.EXERCISE, label: '1.16', value: `Ba bạn An, Bình, Cường đứng định một cây sào thẳng đứng rồi đánh dấu chiều cao của các bạn lên đó bởi ba điểm. Cường đặt tên cho các điểm đó theo thứ tự từ dưới lên là $A, B, C$ và giải thích rằng điểm $A$ ứng với chiều cao của bạn An, $B$ ứng với chiều cao của bạn Bình và $C$ ứng với chiều cao của bạn Cường. Biết rằng An cao $150$ cm, Bình cao $153$ cm, Cường cao $148$ cm. Theo em, Cường giải thích như thế có đúng không? Nếu không thì phải sửa như thế nào cho đúng?` },
+        ],
+      },
+      {
+        id: 'lesson-1-4',
+        title: 'Bài 4: PHÉP CỘNG VÀ PHÉP TRỪ SỐ TỰ NHIÊN',
+        concepts: ['Phép cộng', 'Số hạng', 'Tổng', 'Phép trừ', 'Số bị trừ', 'Số trừ', 'Hiệu', 'Tính chất giao hoán', 'Tính chất kết hợp'],
+        skills: [
+          'Thực hiện phép cộng và phép trừ số tự nhiên.',
+          'Áp dụng tính chất giao hoán, kết hợp của phép cộng để tính nhẩm, tính hợp lí.',
+          'Giải quyết một số vấn đề thực tiễn gắn với việc thực hiện phép cộng và phép trừ.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. PHÉP CỘNG SỐ TỰ NHIÊN' },
+          { type: ContentPartType.TEXT, value: `
+Hai số tự nhiên $a$ và $b$ cho ta một số tự nhiên gọi là tổng của chúng, kí hiệu là $a+b$.
+* Có thể minh họa phép cộng $3+4=7$ với tia số.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa phép cộng', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/phep-cong.png?v=1718873827670', alt: 'Minh họa phép cộng' },
+          { type: ContentPartType.TEXT, value: `**Tính chất của phép cộng:**
+* Giao hoán: $a+b=b+a$.
+* Kết hợp: $(a+b)+c=a+(b+c)$.`},
+          { type: ContentPartType.NOTE, label: 'Chú ý', value: '$a+0=a$. $0+a=a$.' },
+          { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: 'Tính một cách hợp lí: $66+289+134+311$' },
+          { type: ContentPartType.HEADING_PRIMARY, value: '2. PHÉP TRỪ SỐ TỰ NHIÊN' },
+          { type: ContentPartType.TEXT, value: `
+* Hai số tự nhiên $a$ và $b$ cho, nếu có số tự nhiên $c$ sao cho $a=b+c$ thì ta có phép trừ $a-b=c$.
+* Minh họa phép trừ $7-4=3$ với tia số.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa phép trừ', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/phep-tru.png?v=1718873835626', alt: 'Minh họa phép trừ' },
+          { type: ContentPartType.EXERCISE, label: 'Luyện tập 2', value: 'Tính: $865\\ 279 - 45\\ 027$.' },
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '1.17', value: 'Tính: $a) 63\\ 548 + 19\\ 256$; $b) 129\\ 107 - 34\\ 693$.' },
+        ],
+      },
+      {
+        id: 'lesson-1-5',
+        title: 'Bài 5: PHÉP NHÂN VÀ PHÉP CHIA SỐ TỰ NHIÊN',
+        concepts: ['Phép nhân', 'Thừa số', 'Tích', 'Phép chia', 'Số bị chia', 'Số chia', 'Thương'],
+        skills: [
+          'Thực hiện phép nhân và phép chia số tự nhiên.',
+          'Áp dụng các tính chất của phép nhân để tính nhẩm, tính hợp lí.',
+          'Giải quyết những vấn đề thực tiễn gắn với việc thực hiện phép nhân và phép chia số tự nhiên.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. PHÉP NHÂN SỐ TỰ NHIÊN' },
+          { type: ContentPartType.TEXT, value: `
+Hai số tự nhiên $a$ và $b$ cho ta một số tự nhiên gọi là tích của $a$ và $b$, kí hiệu là $a \\times b$ hoặc $a \\cdot b$.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa phép nhân', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/phep-nhan.png?v=1718873842603', alt: 'Minh họa phép nhân' },
+          { type: ContentPartType.TEXT, value: `**Tính chất của phép nhân:**
+* Giao hoán: $a \\cdot b = b \\cdot a$.
+* Kết hợp: $(a \\cdot b) \\cdot c = a \\cdot (b \\cdot c)$.
+* Phân phối của phép nhân đối với phép cộng: $a \\cdot (b+c) = a \\cdot b + a \\cdot c$.`},
+          { type: ContentPartType.NOTE, label: 'Chú ý', value: '$a \\cdot 1 = a; a \\cdot 0 = 0$.' },
+          { type: ContentPartType.HEADING_PRIMARY, value: '2. PHÉP CHIA HẾT VÀ PHÉP CHIA CÓ DƯ' },
+          { type: ContentPartType.TEXT, value: `
+Với hai số tự nhiên $a$ và $b$ đã cho ($b \\neq 0$), ta luôn tìm được đúng hai số tự nhiên $q$ và $r$ sao cho $a = bq + r$ trong đó $0 \\le r < b$.
+*   Nếu $r=0$ thì ta có **phép chia hết** $a:b=q$ (dư $0$); $a$ là số bị chia, $b$ là số chia, $q$ là thương.
+*   Nếu $r \\neq 0$ thì ta có **phép chia có dư** $a:b=q$ (dư $r$); $a$ là số bị chia, $b$ là số chia, $q$ là thương và $r$ là số dư.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '1.23', value: 'Thực hiện các phép chia sau: $a) 951:23$; $b) 47:273$.' },
+        ],
+      },
+      {
+        id: 'lesson-1-6',
+        title: 'Bài 6: LŨY THỪA CỦA MỘT SỐ TỰ NHIÊN',
+        concepts: ['Lũy thừa', 'Cơ số', 'Số mũ', 'Bình phương', 'Lập phương'],
+        skills: [
+          'Thực hiện phép tính nâng lên lũy thừa của một số tự nhiên.',
+          'Nhân, chia hai lũy thừa cùng cơ số với số mũ tự nhiên.',
+          'Giải quyết được những vấn đề thực tiễn gắn với việc thực hiện phép tính lũy thừa của số tự nhiên.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. LŨY THỪA VỚI SỐ MŨ TỰ NHIÊN' },
+          { type: ContentPartType.TEXT, value: `
+Lũy thừa bậc $n$ của số tự nhiên $a$ là tích của $n$ thừa số bằng nhau, mỗi thừa số bằng $a$: $a^n = a \\cdot a \\cdot \\dots \\cdot a$ ($n \\in N^*$, $n$ thừa số).
+$a$ đọc là "$a$ mũ $n$" hoặc "a lũy thừa $n$", $a$ là cơ số, $n$ là số mũ.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa lũy thừa', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/luy-thua.png?v=1718873849503', alt: 'Minh họa lũy thừa' },
+          { type: ContentPartType.NOTE, label: 'Chú ý', value: `$a^1 = a$. $a^2$ cũng gọi là **bình phương** (hay lập phương của $a$); $a^3$ cũng được gọi là **lập phương** (hay lập phương của $a$).`},
+          { type: ContentPartType.HEADING_PRIMARY, value: '2. NHÂN VÀ CHIA HAI LŨY THỪA CÙNG CƠ SỐ' },
+          { type: ContentPartType.TEXT, value: `
+* Khi nhân hai lũy thừa cùng cơ số, ta giữ nguyên cơ số và cộng các số mũ: $a^m \\cdot a^n = a^{m+n}$.
+* Khi chia hai lũy thừa cùng cơ số (khác $0$), ta giữ nguyên cơ số và lấy số mũ của số bị chia trừ số mũ của số chia: $a^m : a^n = a^{m-n}$ (với $a \\neq 0, m \\ge n$).`},
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '1.36', value: 'Viết các tích sau dưới dạng lũy thừa: $a) 9 \\cdot 9 \\cdot 9$; $b) 10 \\cdot 10 \\cdot 10$.' },
+        ],
+      },
+      {
+        id: 'lesson-1-7',
+        title: 'Bài 7: THỨ TỰ THỰC HIỆN CÁC PHÉP TÍNH',
+        concepts: ['Biểu thức', 'Giá trị của một biểu thức'],
+        skills: [
+          'Nhận biết thứ tự thực hiện các phép tính.',
+          'Tính giá trị của một biểu thức.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. THỨ TỰ THỰC HIỆN CÁC PHÉP TÍNH' },
+          { type: ContentPartType.TEXT, value: `Để tránh tình trạng trên, ta cần có quy ước thống nhất về thứ tự thực hiện các phép tính trong một biểu thức.
+
+**Thứ tự thực hiện các phép tính trong một biểu thức:**
+*   **Đối với các biểu thức không có dấu ngoặc:**
+    Nếu chỉ có phép cộng và phép trừ (hoặc chỉ có phép nhân và phép chia) thì thực hiện các phép tính từ trái qua phải. Chẳng hạn: $42 - 30 + 8 = 20$; $100 : 5 \\cdot 2 = 20 \\cdot 2 = 40$.
+    Nếu có các phép tính cộng, trừ, nhân, chia, nâng lên lũy thừa thì ta thực hiện phép nâng lên lũy thừa trước, rồi đến nhân và chia, cuối cùng đến cộng và trừ. Chẳng hạn: $1 + 2 \\cdot 3^2 = 1 + 2 \\cdot 9 = 1 + 18 = 19$.
+*   **Đối với biểu thức có dấu ngoặc:**
+    Nếu chỉ có một dấu ngoặc thì ta thực hiện phép tính trong dấu ngoặc trước. Chẳng hạn: $(10 + 5) : 5 = 15 : 5 = 3$.
+    Nếu có các dấu ngoặc tròn ( ), dấu ngoặc vuông [ ], dấu ngoặc nhọn \\{ \\} thì ta thực hiện các phép tính trong dấu ngoặc tròn trước, rồi thực hiện các phép tính trong các dấu ngoặc vuông, cuối cùng thực hiện các phép tính trong dấu ngoặc nhọn. Chẳng hạn: $\\{15 + 2 \\cdot [8 - (5-3)]\\} : 9 = \\{15 + 2 \\cdot [8 - 2]\\} : 9 = \\{15 + 2 \\cdot 6\\} : 9 = \\{15 + 12\\} : 9 = 27 : 9 = 3$.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa thứ tự phép tính', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/thu-tu-phep-tinh.png?v=1718873857317', alt: 'Minh họa thứ tự phép tính' },
+          { type: ContentPartType.NOTE, label: 'Ghi nhớ', value: `
+1. Với biểu thức không có dấu ngoặc: Lũy thừa -> Nhân và chia -> Cộng và trừ.
+2. Với biểu thức có dấu ngoặc: trong ngoặc tròn, ngoài ngoặc vuông, ngoài ngoặc nhọn.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '1.46', value: 'Tính: $a) 235 + 78 - 142$; $b) 14 + 2 \\cdot 8^2$.' },
+        ],
+      },
+      {
+        id: 'lesson-1-8',
+        title: 'Luyện tập chung Chương I',
+        concepts: ['Tổng hợp các kiến thức đã học'],
+        skills: ['Vận dụng linh hoạt các kiến thức về tập hợp, số tự nhiên, phép tính để giải bài tập.'],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: 'Luyện tập chung' },
+          { type: ContentPartType.EXAMPLE, label: 'Ví dụ 1', value: `Tính giá trị của biểu thức $120 + [55 - (11 - 3)^2] + 2^3$.
+
+**Giải:**
+*   Đề bài có lỗi nhỏ ở đây: $55-64$ sẽ ra số âm, mà chương này chưa học số nguyên âm.
+*   Chúng ta sẽ sửa lại đề để có kết quả là số tự nhiên. Giả sử đề là: $120 + [64 - (11 - 3)^2] + 2^3$.
+*   Thực hiện phép tính:
+    $120 + [64 - (11 - 3)^2] + 2^3$
+    $= 120 + [64 - 8^2] + 8$
+    $= 120 + [64 - 64] + 8$
+    $= 120 + 0 + 8$
+    $= 128$
+Vậy biểu thức có giá trị bằng $128$.` },
+          { type: ContentPartType.EXERCISE, label: '1.50', value: 'Tính giá trị của biểu thức: $a) 36 - 18 : 6$; $b) 2^3 + 24 : 6 - 2$.' },
+        ],
+      },
+      {
+        id: 'lesson-1-9',
+        title: 'Bài tập cuối Chương I',
+        concepts: ['Tổng hợp kiến thức Chương I'],
+        skills: ['Vận dụng toàn bộ kiến thức Chương I để giải các bài tập tổng hợp.'],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: 'Bài tập cuối Chương I' },
+          { type: ContentPartType.EXERCISE, label: '1.54', value: 'Viết số tự nhiên $a$ sau đây: Mười lăm tỉ hai trăm sáu mươi ba triệu không trăm hai mươi nghìn trăm linh tám.' },
+          { type: ContentPartType.EXERCISE, label: '1.58', value: 'Khối $6$ có $320$ học sinh đi tham quan. Nhà trường cần thuê ít nhất bao nhiêu xe ô tô $45$ chỗ ngồi để đủ chỗ cho tất cả học sinh?' },
         ],
       },
     ],
@@ -296,8 +439,8 @@ Số 16 không chia hết cho 3 vì $16 : 3 = 5$ dư 1.
 Cho hai số tự nhiên $a$ và $b$ ($b \\neq 0$).
 Nếu số tự nhiên $k$ sao cho $a = kb$ thì ta nói $a$ chia hết cho $b$ và kí hiệu là $a \\vdots b$.
 Nếu $a$ không chia hết cho $b$ ta kí hiệu là $a \\not\\vdots b$.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa ước và bội', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/uoc-boi-hinh-tuong.png?v=1718873864197', alt: 'Minh họa ước và bội' },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: '$15 \\vdots 3$' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa ước và bội', imageUrl: 'https://picsum.photos/400/200?random=9', alt: 'Minh họa ước và bội' },
           { type: ContentPartType.EXERCISE, label: '', value: `Tìm kí hiệu thích hợp $(\\vdots, \\not\\vdots)$ thay cho dấu "?":
 $24 \\ ? \\ 6 \\quad 45 \\ ? \\ 10 \\quad 35 \\ ? \\ 5 \\quad 42 \\ ? \\ 4$.` },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ 1', value: `Nhân dịp sinh nhật, mẹ cho Việt 12 gói kẹo để liên hoan với các bạn, mỗi gói có 35 chiếc. Biết lớp Việt có 5 tổ, hỏi Việt có thể chia đều số kẹo cho các tổ không?
@@ -311,7 +454,7 @@ Ta kí hiệu $U(a)$ là tập hợp các ước của $a$ và $B(b)$ là tập 
           { type: ContentPartType.NOTE, label: 'Tính chất 1', value: `
 *   Nếu $a \\vdots m$ và $b \\vdots m$ thì $(a+b) \\vdots m$.
 *   Nếu $a \\vdots m, b \\vdots m$ và $c \\vdots m$ thì $(a+b+c) \\vdots m$.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa số chia hết', imageUrl: 'https://picsum.photos/400/200?random=10', alt: 'Minh họa số chia hết' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa số chia hết', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/so-chia-het-hinh-tuong.png?v=1718873870630', alt: 'Minh họa số chia hết' },
           { type: ContentPartType.NOTE, label: 'Chú ý', value: 'Tính chất 1 cũng đúng với một hiệu, chẳng hạn $30 \\vdots 3$ và $18 \\vdots 3$, suy ra $(30 - 18) \\vdots 3$.' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
           { type: ContentPartType.EXERCISE, label: '2.1', value: 'Hãy tìm các ước của mỗi số sau:\na) $30$; $35$; $17$.\nb) $16$; $24$; $35$.' },
@@ -339,7 +482,7 @@ $120 = 12 \\times 10 = 12 \\times 2 \\times 5$ chia hết cho 2 và cho 5.
 $2010 = 201 \\times 10 = 201 \\times 2 \\times 5$ chia hết cho 2 và cho 5.
 Ta nhận thấy các số 120 và 2010 có chữ số tận cùng là 0 đều chia hết cho 2 và 5. Vậy các số có chữ số tận cùng như thế nào thì chia hết cho 2? Các số có chữ số tận cùng như thế nào thì chia hết cho 5?` },
           { type: ContentPartType.EXAMPLE, label: 'Dấu hiệu chia hết cho 2, cho 5', value: `
-*   Xét số $n = \\overline{23*}$ ($*$ là chữ số tận cùng của $n$). Ta viết $n = 230 + *$.
+*   Xét số $n = \\overline{23*}$ (* là chữ số tận cùng của $n$). Ta viết $n = 230 + *$.
     **HD1** Số $230$ có chia hết cho $2$ và chia hết cho $5$ không?
 *   **HD2** Vận dụng tính chất chia hết của một tổng, hãy cho biết:
     a) Thay dấu $*$ bởi chữ số nào thì $n$ chia hết cho $2$?
@@ -347,7 +490,7 @@ Ta nhận thấy các số 120 và 2010 có chữ số tận cùng là 0 đều 
 
 *   Các số có chữ số tận cùng là $0, 2, 4, 6, 8$ thì **chia hết cho 2** và chỉ những số đó mới chia hết cho 2.
 *   Các số có chữ số tận cùng là $0$ hoặc $5$ thì **chia hết cho 5** và chỉ những số đó mới chia hết cho 5.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa dấu hiệu chia hết', imageUrl: 'https://picsum.photos/400/200?random=11', alt: 'Minh họa dấu hiệu chia hết' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa dấu hiệu chia hết', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/dau-hieu-chia-het-hinh-tuong.png?v=1718873877994', alt: 'Minh họa dấu hiệu chia hết' },
           { type: ContentPartType.HEADING_PRIMARY, value: '2. DẤU HIỆU CHIA HẾT CHO 9, CHO 3' },
           { type: ContentPartType.TEXT, value: `Hà nhận thấy số 180 chia hết cho 9 và tổng các chữ số của nó là $1 + 8 + 0 = 9$ cũng chia hết cho 9. Liệu những số chia hết cho 9 đều có tính chất này không?` },
           { type: ContentPartType.EXAMPLE, label: 'Dấu hiệu chia hết cho 9', value: `
@@ -356,7 +499,7 @@ Cho các số $27; 82; 195; 234$.
 *   **HD4** Tính tổng các chữ số của mỗi số và xét tính chia hết cho $9$ của các tổng đó trong mỗi nhóm.
 
 Các số có tổng các chữ số chia hết cho $9$ thì **chia hết cho 9** và chỉ những số đó mới chia hết cho 9.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa số chia hết', imageUrl: 'https://picsum.photos/400/200?random=12', alt: 'Minh họa số chia hết' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa số chia hết', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/so-chia-het-hinh-tuong-2.png?v=1718873884807', alt: 'Minh họa số chia hết' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
           { type: ContentPartType.EXERCISE, label: '2.10', value: 'Trong các số sau, số nào chia hết cho 2, số nào chia hết cho 5?\n$324; 248; 2\\ 020; 2\\ 025$.' },
           { type: ContentPartType.EXERCISE, label: '2.11', value: 'Trong các số sau, số nào chia hết cho 3, số nào chia hết cho 9?\n$450; 123; 2\\ 019; 2\\ 025$.' },
@@ -395,7 +538,7 @@ Vậy, số 11 và số 10 có gì khác nhau, điều này có liên quan gì �
           { type: ContentPartType.TEXT, value: `
 *   **Số nguyên tố** là số tự nhiên lớn hơn 1, chỉ có hai ước là 1 và chính nó.
 *   **Hợp số** là số tự nhiên lớn hơn 1, có nhiều hơn hai ước.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa phân tích thừa số nguyên tố', imageUrl: 'https://picsum.photos/400/200?random=13', alt: 'Minh họa phân tích thừa số nguyên tố' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa phân tích thừa số nguyên tố', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/so-nguyen-to.png?v=1718873892706', alt: 'Minh họa phân tích thừa số nguyên tố' },
           { type: ContentPartType.NOTE, label: 'Ghi chú', value: 'Số 0 và số 1 không là số nguyên tố và không là hợp số.' },
           { type: ContentPartType.EXERCISE, label: 'Luyện tập 1', value: 'Em hãy tìm những thích hợp cho các số trong Bảng 2.1.' },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ 1', value: `Số nào dưới đây là số nguyên tố, số nào là hợp số? Vì sao?
@@ -417,7 +560,7 @@ $24 = 2 \\times 2 \\times 2 \\times 3 = 2^3 \\times 3$.` },
           { type: ContentPartType.EXERCISE, label: '', value: 'Bạn Việt phân tích số 60 ra thừa số nguyên tố và cho kết quả $60 = 3 \\times 4 \\times 5$. Kết quả của Việt đúng hay sai? Nếu sai, em hãy sửa lại cho đúng.' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'Phương pháp phân tích số ra thừa số nguyên tố bằng sơ đồ cây' },
           { type: ContentPartType.TEXT, value: 'Quá trình phân tích số 24 ra thừa số nguyên tố như trên có thể được trình bày dưới dạng một sơ đồ như Hình 2.2 gọi là **sơ đồ cây**.' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa sơ đồ cây', imageUrl: 'https://picsum.photos/400/200?random=14', alt: 'Minh họa sơ đồ cây' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa sơ đồ cây', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/so-do-cay.png?v=1718873900977', alt: 'Minh họa sơ đồ cây' },
           { type: ContentPartType.EXERCISE, label: '', value: 'Tìm các số còn thiếu trong phân tích số 18 ra thừa số nguyên tố theo sơ đồ cây ở Hình 2.3.' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'Phương pháp phân tích số ra thừa số nguyên tố bằng cột dọc' },
           { type: ContentPartType.TEXT, value: `Ta còn có thể phân tích một số ra thừa số nguyên tố theo sơ đồ cột dọc. Ví dụ, ta phân tích số 24 thành tích các thừa số nguyên tố theo cách làm như sau:
@@ -428,7 +571,7 @@ $3 | 3$
 $1$
 Vậy, $24 = 2 \\times 2 \\times 2 \\times 3 = 2^3 \\times 3$.
 Sơ đồ phân tích số 24 thành tích các thừa số nguyên tố như trên được gọi là **sơ đồ cột dọc**.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa cột dọc', imageUrl: 'https://picsum.photos/400/200?random=15', alt: 'Minh họa cột dọc' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa cột dọc', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/cot-doc.png?v=1718873908866', alt: 'Minh họa cột dọc' },
           { type: ContentPartType.EXERCISE, label: '', value: 'Tìm các số còn thiếu trong phân tích số 30 ra thừa số nguyên tố theo sơ đồ cột ở hình bên.' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
           { type: ContentPartType.EXERCISE, label: '2.17', value: 'Phân tích các số sau ra thừa số nguyên tố:\n$70; 115$.' },
@@ -449,9 +592,198 @@ _Bước 3._ Số nguyên tố tiếp theo là 3. Gạch tất cả các số l�
 _Bước 4._ Số nguyên tố tiếp theo là 5. Gạch tất cả các số lớn hơn 5 và là bội của 5.
 _Bước 5._ Số nguyên tố tiếp theo là 7. Gạch tất cả các số lớn hơn 7 và là bội của 7. Các số không bị gạch trong bảng chính là các số nguyên tố.
 Làm tương tự như việc dùng một cái sàng để loại bỏ số 1 và các hợp số. Do đó nó có tên là sàng Eratosthenes.` },
-          { type: ContentPartType.IMAGE, value: 'Minh họa Sàng Eratosthenes', imageUrl: 'https://picsum.photos/400/200?random=16', alt: 'Minh họa Sàng Eratosthenes' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa Sàng Eratosthenes', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/sang-eratosthenes.png?v=1718873917839', alt: 'Minh họa Sàng Eratosthenes' },
+        ],
+      },
+      {
+        id: 'lesson-2-4',
+        title: 'Bài 11: ƯỚC CHUNG. ƯỚC CHUNG LỚN NHẤT',
+        concepts: ['Ước chung', 'Ước chung lớn nhất', 'Hai số nguyên tố cùng nhau'],
+        skills: [
+          'Xác định ước chung, ước chung lớn nhất của hai hoặc ba số tự nhiên.',
+          'Nhận biết phân số tối giản.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. ƯỚC CHUNG VÀ ƯỚC CHUNG LỚN NHẤT' },
+          { type: ContentPartType.TEXT, value: `
+* Ước chung của hai hay nhiều số là ước của tất cả các số đó.
+* Ước chung lớn nhất của hai hay nhiều số là số lớn nhất trong tập hợp các ước chung của các số đó.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa ước chung', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/uoc-chung-hinh-tuong.png?v=1718873926505', alt: 'Minh họa ước chung' },
+          { type: ContentPartType.NOTE, label: 'Chú ý', value: 'Ta chỉ xét ước chung của các số khác 0.' },
+          { type: ContentPartType.HEADING_PRIMARY, value: '2. CÁCH TÌM ƯỚC CHUNG LỚN NHẤT' },
+          { type: ContentPartType.TEXT, value: `
+Để tìm ước chung lớn nhất bằng cách phân tích các số ra thừa số nguyên tố ta làm như sau:
+1. Phân tích mỗi số ra thừa số nguyên tố.
+2. Chọn ra các thừa số nguyên tố chung.
+3. Lập tích các thừa số đã chọn, mỗi thừa số lấy với số mũ nhỏ nhất. Tích đó là ƯCLN cần tìm.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: '3. RÚT GỌN PHÂN SỐ TỐI GIẢN' },
+          { type: ContentPartType.TEXT, value: `
+* Ta rút gọn phân số bằng cách chia cả tử và mẫu của phân số đó cho một ước chung khác 1 (nếu có).
+* Phân số $\\frac{a}{b}$ được gọi là phân số tối giản nếu $a$ và $b$ không có ước chung nào khác 1, nghĩa là ƯCLN$(a, b) = 1$.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '2.30', value: 'Tìm tập hợp ước chung của: $a) 30$ và $45$; $b) 42$ và $70$.' },
+        ],
+      },
+      {
+        id: 'lesson-2-5',
+        title: 'Bài 12: BỘI CHUNG. BỘI CHUNG NHỎ NHẤT',
+        concepts: ['Bội chung', 'Bội chung nhỏ nhất'],
+        skills: [
+          'Tìm bội chung, bội chung nhỏ nhất của hai hoặc ba số tự nhiên.',
+          'Sử dụng bội chung nhỏ nhất để quy đồng mẫu các phân số và cộng, trừ phân số.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. BỘI CHUNG VÀ BỘI CHUNG NHỎ NHẤT' },
+          { type: ContentPartType.TEXT, value: `
+* Bội chung của hai hay nhiều số là bội của tất cả các số đó.
+* Bội chung nhỏ nhất của hai hay nhiều số là số nhỏ nhất khác 0 trong tập hợp các bội chung của các số đó.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa bội chung', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/boi-chung-hinh-tuong.png?v=1718873935293', alt: 'Minh họa bội chung' },
+          { type: ContentPartType.NOTE, label: 'Chú ý', value: 'Ta chỉ xét bội chung của các số khác 0.' },
+          { type: ContentPartType.HEADING_PRIMARY, value: '2. CÁCH TÌM BỘI CHUNG NHỎ NHẤT' },
+          { type: ContentPartType.TEXT, value: `
+Để tìm bội chung nhỏ nhất bằng cách phân tích các số ra thừa số nguyên tố ta làm như sau:
+1. Phân tích mỗi số ra thừa số nguyên tố.
+2. Chọn ra các thừa số nguyên tố chung và riêng.
+3. Lập tích các thừa số đã chọn, mỗi thừa số lấy với số mũ lớn nhất. Tích đó là BCNN cần tìm.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: '3. QUY ĐỒNG MẪU CÁC PHÂN SỐ' },
+          { type: ContentPartType.TEXT, value: `
+Để quy đồng mẫu các phân số $\\frac{a}{b}$ và $\\frac{c}{d}$ ta phải tìm mẫu chung của hai phân số đó.
+Thông thường ta nên chọn mẫu chung là bội chung nhỏ nhất của hai mẫu.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '2.36', value: 'Tìm bội chung nhỏ hơn 200 của: $a) 5$ và $7$; $b) 3, 4$ và $10$.' },
+        ],
+      },
+      {
+        id: 'lesson-2-6',
+        title: 'Luyện tập chung Chương II',
+        concepts: ['Tổng hợp các kiến thức đã học'],
+        skills: ['Vận dụng linh hoạt các kiến thức về tính chia hết, ước và bội để giải bài tập.'],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: 'Luyện tập chung' },
+          { type: ContentPartType.EXAMPLE, label: 'Ví dụ 1', value: 'Tìm ước chung lớn nhất của 60 và 90.' },
+          { type: ContentPartType.EXERCISE, label: '2.45', value: 'Cho bảng sau: (bảng có a, b, ƯCLN, BCNN, a*b)' },
+        ],
+      },
+      {
+        id: 'lesson-2-7',
+        title: 'Bài tập cuối Chương II',
+        concepts: ['Tổng hợp kiến thức Chương II'],
+        skills: ['Vận dụng toàn bộ kiến thức Chương II để giải các bài tập tổng hợp.'],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: 'Bài tập cuối Chương II' },
+          { type: ContentPartType.EXERCISE, label: '2.53', value: 'Tìm $x \\in \\{50; 108; 189; 1\\ 234; 2\\ 019; 2\\ 020\\}$ sao cho: $a) x - 12$ chia hết cho $2$; $b) x - 27$ chia hết cho $3$.' },
+          { type: ContentPartType.EXERCISE, label: '2.58', value: 'Có $12$ quả cam, $18$ quả xoài và $30$ quả bơ. Mẹ muốn Mai chia đều mỗi loại quả đó vào các túi quà sao cho mỗi túi đều có cả cam, xoài và bơ. Hỏi Mai có thể chia được nhiều nhất là mấy túi quà?' },
         ],
       },
     ],
   },
-];
+  {
+    id: 'chapter-3',
+    title: 'Chương III: SỐ NGUYÊN',
+    lessons: [
+      {
+        id: 'lesson-3-1',
+        title: 'Bài 13: TẬP HỢP CÁC SỐ NGUYÊN',
+        concepts: ['Số nguyên', 'Số nguyên dương', 'Số nguyên âm', 'Tập hợp số nguyên', 'Trục số', 'Chiều dương', 'Chiều âm'],
+        skills: [
+          'Nhận biết, đọc và viết số nguyên.',
+          'Nhận biết tập hợp số nguyên.',
+          'Nhận biết ý nghĩa của số nguyên âm trong một số tình huống thực tế.',
+          'Biểu diễn số nguyên trên trục số.',
+          'So sánh hai số nguyên.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. LÀM QUEN VỚI SỐ NGUYÊN ÂM' },
+          { type: ContentPartType.TEXT, value: `
+Quan sát Hình 3.1 và 3.2, các em thấy ngoài các số quen thuộc như 2 hay 10 gọi là những **số dương**, còn có các số với dấu "-" đứng trước, đó là các **số âm**. Vậy số âm có ý nghĩa gì trong đời sống và số nguyên hư thế nào với các số đã học?`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa nhiệt kế', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/nhiet-ke.png?v=1718873942690', alt: 'Minh họa nhiệt kế' },
+          { type: ContentPartType.NOTE, label: 'Chú ý', value: 'Số 0 không là số nguyên dương, cũng không là số nguyên âm. Để đọc $2^\\circ C$ dưới $0^\\circ C$ ta nói "$2$ độ âm".' },
+          { type: ContentPartType.HEADING_PRIMARY, value: '2. THỨ TỰ TRONG TẬP SỐ NGUYÊN' },
+          { type: ContentPartType.TEXT, value: `
+Cho hai số tự nhiên $a$ và $b$. Ta đã biết trên tia số nếu điểm $a$ nằm trước điểm $b$ thì $a < b$.
+Đối với số nguyên, điều đó còn đúng với những trường hợp nào?
+
+**Trục số:**
+*   Ta biểu diễn các số $0; 1; 2; 3; \\dots$ và các số nguyên âm $-1; -2; -3; \\dots$ như Hình 3.6.
+*   Khi đó ta được một trục số gốc $O$.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa trục số', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/truc-so.png?v=1718873952778', alt: 'Minh họa trục số' },
+          { type: ContentPartType.TEXT, value: `
+*   Chiều từ trái sang phải là **chiều dương**; chiều ngược lại là **chiều âm**.
+*   Điểm biểu diễn số nguyên $a$ gọi là điểm $a$.
+*   Cho hai số nguyên $a$ và $b$. Trên trục số, nếu điểm $a$ nằm trước điểm $b$ thì số $a$ nhỏ hơn số $b$, kí hiệu $a < b$.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '3.1', value: 'Mỗi nhiệt kế dưới đây chỉ bao nhiêu độ C?' },
+        ],
+      },
+      {
+        id: 'lesson-3-2',
+        title: 'Bài 14: PHÉP CỘNG VÀ PHÉP TRỪ SỐ NGUYÊN',
+        concepts: ['Cộng hai số nguyên cùng dấu', 'Cộng hai số nguyên khác dấu', 'Tính chất phép cộng', 'Trừ hai số nguyên'],
+        skills: [
+          'Thực hiện phép cộng, trừ hai số nguyên.',
+          'Vận dụng các tính chất của phép cộng để tính nhẩm, tính hợp lí.',
+          'Giải toán thực tiễn liên quan đến phép cộng hay phép trừ số nguyên.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. CỘNG HAI SỐ NGUYÊN CÙNG DẤU' },
+          { type: ContentPartType.TEXT, value: `
+Để biết phép cộng hai số nguyên dương, chẳng hạn $3+5=8$, có thể minh họa trên tia số.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa phép cộng số nguyên', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/phep-cong-so-nguyen.png?v=1718873960352', alt: 'Minh họa phép cộng số nguyên' },
+          { type: ContentPartType.HEADING_PRIMARY, value: '2. CỘNG HAI SỐ NGUYÊN KHÁC DẤU' },
+          { type: ContentPartType.TEXT, value: `
+* Muốn cộng hai số nguyên khác dấu (không đối nhau), ta tìm hiệu phần số tự nhiên của chúng (số lớn trừ số nhỏ) rồi đặt trước hiệu tìm được dấu của số có phần số tự nhiên lớn hơn.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa phép cộng số nguyên khác dấu', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/phep-cong-so-nguyen-khac-dau.png?v=1718873967849', alt: 'Minh họa phép cộng số nguyên khác dấu' },
+          { type: ContentPartType.HEADING_PRIMARY, value: '3. TÍNH CHẤT CỦA PHÉP CỘNG' },
+          { type: ContentPartType.TEXT, value: `
+Phép cộng số nguyên có các tính chất:
+* Giao hoán: $a+b=b+a$.
+* Kết hợp: $(a+b)+c=a+(b+c)$.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: '4. TRỪ HAI SỐ NGUYÊN' },
+          { type: ContentPartType.TEXT, value: `
+Quy tắc trừ hai số nguyên:
+Muốn trừ số nguyên $a$ cho số nguyên $b$, ta cộng $a$ với số đối của $b$: $a - b = a + (-b)$.`},
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '3.9', value: 'Tính tổng hai số cùng dấu: $a) (-7) + (-2)$; $b) (-8) + (-5)$.' },
+        ],
+      },
+      {
+        id: 'lesson-3-3',
+        title: 'Bài 15: QUY TẮC DẤU NGOẶC',
+        concepts: ['Quy tắc dấu ngoặc'],
+        skills: [
+          'Nhận biết và áp dụng quy tắc dấu ngoặc trong toán, nhất là để tính nhẩm hay tính hợp lí.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BỎ DẤU NGOẶC TRONG TRƯỜNG HỢP ĐƠN GIẢN' },
+          { type: ContentPartType.TEXT, value: `
+Đối với một biểu thức có dấu ngoặc, ta thường thực hiện các phép tính trong dấu ngoặc trước. Nhưng đôi khi việc bỏ đi các dấu ngoặc sẽ làm cho việc tính toán trở nên thuận lợi hơn.
+
+*   Các số âm (hay dương) trong một dãy tính thường được viết trong dấu ngoặc. Nhờ quy tắc cộng hay trừ số nguyên, ta có thể viết dãy tính dưới dạng không có dấu ngoặc. Ví dụ:
+    $2 + (-9) = 2 - 9$
+    $(-2) - (-9) = -2 + 9$
+    $3 + (7) + (-4) - (-8) = 3 + 7 - 4 + 8$.
+*   Vì phép trừ chuyển được về phép cộng nên các dãy tính như trên cũng được gọi là một tổng.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa quy tắc dấu ngoặc', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/quy-tac-dau-ngoac.png?v=1718873976378', alt: 'Minh họa quy tắc dấu ngoặc' },
+          { type: ContentPartType.HEADING_PRIMARY, value: 'DẤU CỦA MỘT SỐ HẠNG KHI BỎ DẤU NGOẶC' },
+          { type: ContentPartType.NOTE, label: 'Quy tắc dấu ngoặc', value: `
+*   Khi bỏ dấu ngoặc có dấu "+" đằng trước, ta giữ nguyên dấu của các số hạng trong ngoặc.
+*   Khi bỏ dấu ngoặc có dấu "-" đằng trước, ta phải đổi dấu tất cả các số hạng trong dấu ngoặc: dấu "+" đổi thành "-" và dấu "-" đổi thành "+".`},
+          { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
+          { type: ContentPartType.EXERCISE, label: '3.19', value: 'Bỏ dấu ngoặc và tính các tổng sau: $a) -321 + (-29) - 142 - (-72)$; $b) 214 - (36) + (-305)$.' },
+        ],
+      },
+      {
+        id: 'lesson-3-4',
+        title: 'Bài 16: PHÉP NHÂN SỐ NGUYÊN',
+        concepts: ['Nhân hai số nguyên khác dấu', 'Nhân hai số nguyên cùng dấu', 'Tính chất phép nhân'],
+        skills: [
+          'Thực hiện phép nhân hai số nguyên.',
+          'Vận dụng các tính chất của phép nhân để tính nhẩm, tính hợp lí.',
+          'Giải toán thực tiễn liên quan đến phép nhân số nguyên.'
+        ],
+        content: [
+          { type: ContentPartType.HEADING_PRIMARY, value: '1. NHÂN HAI SỐ NGUYÊN KHÁC DẤU' },
+          { type: ContentPartType.TEXT, value: `
+Ta có thể làm tương tự đối với phép nhân hai số tự nhiên khác dấu.`},
+          { type: ContentPartType.IMAGE, value: 'Minh họa phép nhân số nguyên khác dấu', imageUrl: 'https://cdn.glitch.global/c313a7bb-412d-4e92-b430-811340176001/phep-nhan-so-nguyen-khac-dau.png?v=1718873983272', alt: 'Minh họa phép nhân số nguyên khác dấu' },
+          {
