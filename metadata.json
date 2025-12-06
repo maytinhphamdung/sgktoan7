@@ -1,0 +1,8 @@
+{
+  "name": "Toán 6 Sách Giáo Khoa",
+  "description": "Ứng dụng học Toán lớp 6, kết nối tri thức với cuộc sống, bao gồm nội dung kiến thức trọng tâm, bài tập và giải đáp AI.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}
