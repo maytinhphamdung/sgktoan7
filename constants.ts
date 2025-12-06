@@ -27,6 +27,7 @@ export const TEXTBOOK_DATA: Chapter[] = [
 
 *   $x$ là một phần tử của tập $A$, kí hiệu là $x \\in A$ (đọc là $x$ thuộc $A$).
 *   $y$ không là phần tử của tập $A$, kí hiệu là $y \\notin A$ (đọc là $y$ không thuộc $A$).` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa Tập hợp, Hình 1.3', imageUrl: 'https://picsum.photos/300/200?random=1', alt: 'Minh họa Tập hợp, Hình 1.3' },
           { type: ContentPartType.NOTE, label: 'Chú ý', value: 'Khi $x$ thuộc $A$, ta còn nói "$x$ nằm trong $A$", hay "$A$ chứa $x$".' },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: 'Với tập hợp $M$ trên Hình 1.3, ta có $4 \\in M$, $1 \\in M$, $7 \\notin M$.' },
           { type: ContentPartType.EXERCISE, label: 'Luyện tập 1', value: 'Gọi $B$ là tập hợp các bạn tổ trưởng trong lớp em. Em hãy chỉ ra một bạn thuộc tập $B$ và một bạn không thuộc tập $B$.' },
@@ -35,6 +36,7 @@ export const TEXTBOOK_DATA: Chapter[] = [
 
 **Cách 1: Liệt kê các phần tử của tập hợp, tức là viết các phần tử của tập hợp trong dấu ngoặc { } (theo thứ tự tùy ý nhưng mỗi phần tử chỉ được viết một lần).**` },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: 'Với tập $P$ gồm các số $0; 1; 2; 3; 4; 5$ ở Hình 1.4, ta viết:\n$P = \\{0; 1; 2; 3; 4; 5\\}$.' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa Tập hợp, Hình 1.4', imageUrl: 'https://picsum.photos/300/200?random=2', alt: 'Minh họa Tập hợp, Hình 1.4' },
           { type: ContentPartType.TEXT, value: `**Cách 2: Nêu dấu hiệu đặc trưng cho các phần tử của tập hợp**` },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: 'Với tập $P$ (xem H.1.4) ta có thể viết:\n$P = \\{n \\mid n$ là số tự nhiên nhỏ hơn $6\\}$.' },
           { type: ContentPartType.NOTE, label: 'Chú ý', value: `
@@ -75,10 +77,63 @@ Khác với tập $X, Y$, tập hợp có vô số phần tử là tập vô h�
 **Giao của hai tập hợp**
 Gọi $C$ là tập hợp gồm các phần tử chung của hai tập $A$ và $B$.
 Ta gọi tập $C$ là giao của hai tập $A$ và $B$, kí hiệu $C = A \\cap B$.` },
-          // Added 'value' property for image captions
-          { type: ContentPartType.IMAGE, value: 'Minh họa Tập hợp, Hình 1.3', imageUrl: 'https://picsum.photos/300/200?random=1', alt: 'Minh họa Tập hợp, Hình 1.3' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa Tập hợp, Hình 1.4', imageUrl: 'https://picsum.photos/300/200?random=2', alt: 'Minh họa Tập hợp, Hình 1.4' },
           { type: ContentPartType.IMAGE, value: 'Minh họa Georg Cantor', imageUrl: 'https://picsum.photos/300/200?random=3', alt: 'Minh họa Georg Cantor' },
+          { type: ContentPartType.QUIZ, quiz: {
+            id: 'quiz-1-1-1',
+            label: 'Kiểm tra kiến thức Bài 1: Tập Hợp',
+            questions: [
+              {
+                questionText: 'Tập hợp các số tự nhiên $N$ bao gồm những số nào?',
+                options: [
+                  'Tất cả các số nguyên',
+                  'Chỉ các số dương',
+                  'Các số $0, 1, 2, 3, \\dots$',
+                  'Chỉ các số chẵn'
+                ],
+                correctAnswerIndex: 2,
+              },
+              {
+                questionText: 'Để kí hiệu "$x$ là phần tử của tập hợp $A$", ta dùng kí hiệu nào?',
+                options: [
+                  '$x = A$',
+                  '$x \\ne A$',
+                  '$x \\in A$',
+                  '$x \\notin A$'
+                ],
+                correctAnswerIndex: 2,
+              },
+              {
+                questionText: 'Cách nào KHÔNG phải là cách mô tả một tập hợp?',
+                options: [
+                  'Liệt kê các phần tử',
+                  'Nêu dấu hiệu đặc trưng',
+                  'Vẽ biểu đồ hình tròn',
+                  'Kể tên các phần tử'
+                ],
+                correctAnswerIndex: 2,
+              },
+              {
+                questionText: 'Cho tập hợp $M = \\{1, 3, 5, 7\\}$. Khẳng định nào sau đây là đúng?',
+                options: [
+                  '$2 \\in M$',
+                  '$5 \\notin M$',
+                  '$7 \\in M$',
+                  '$10 \\in M$'
+                ],
+                correctAnswerIndex: 2,
+              },
+              {
+                questionText: 'Tập hợp các số tự nhiên khác $0$ được kí hiệu là gì?',
+                options: [
+                  '$N$',
+                  '$Z$',
+                  '$N*$',
+                  '$Q$'
+                ],
+                correctAnswerIndex: 2,
+              }
+            ],
+          }},
         ],
       },
       {
@@ -99,6 +154,7 @@ Ta gọi tập $C$ là giao của hai tập $A$ và $B$, kí hiệu $C = A \\cap
 *   Khi viết các số tự nhiên, ta quy ước:
     1. Với các số tự nhiên khác $0$, chữ số đầu tiên (từ trái sang phải) khác $0$.
     2. Để dễ đọc, đối với các số có bốn chữ số trở lên, ta viết tách riêng từng lớp. Mỗi lớp là một nhóm ba chữ số kể từ phải sang trái.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa bảng chữ số La Mã', imageUrl: 'https://picsum.photos/400/200?random=4', alt: 'Minh họa bảng chữ số La Mã' },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ 1', value: `
 *   **HD1** Trong $32\\ 019$, ta thấy:
     "Chữ số $2$ nằm ở hàng nghìn và có giá trị bằng $2 \\times 1\\ 000 = 2\\ 000$".
@@ -129,6 +185,7 @@ Trong đó: $ \\overline{ab} $ là kí hiệu số tự nhiên có hai chữ s�
 *   **Để biểu diễn các số từ 11 đến 20**, ta thêm X vào bên trái mỗi số từ 1 đến 9: XI, XII, ..., XX.
 
 *   **Để biểu diễn các số từ 21 đến 30**, ta thêm XX vào bên trái mỗi số từ 1 đến 9: XXI, XXII, ..., XXX.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa đồng tiền Việt Nam', imageUrl: 'https://picsum.photos/400/200?random=5', alt: 'Minh họa đồng tiền Việt Nam' },
           { type: ContentPartType.NOTE, label: 'Nhận xét', value: `
 1.  Mỗi số La Mã biểu diễn một số tự nhiên bằng tổng giá trị của các phần viết nên số đó. Chẳng hạn, số XXIV có ba phần là X, X và IV tương ứng với các giá trị 10, 10 và 4. Do đó XXIV biểu diễn số 24.
 2.  Không có số La Mã nào biểu diễn số 0.` },
@@ -153,9 +210,6 @@ Ví dụ, số MMXIX gồm bốn thành phần là M, M, X và IX tương ứng 
 **Ghi số trong hệ nhị phân**
 Để ghi số trong hệ nhị phân, ta chỉ dùng hai chữ số là 0 và 1. Mỗi số tự nhiên được viết dưới dạng một dãy chữ số chỉ gồm là 0 và 1. Chẳng hạn, trong hệ nhị phân, hai số 100 và 1 001 lần lượt biểu diễn số 4 và 9 trong hệ thập phân.
 Hai chữ số 1 và 0 tương ứng với hai trạng thái "đóng" và "mở" của mạch điện. Do đó hệ nhị phân được sử dụng nhiều trong khoa học máy tính.` },
-          // Added 'value' property for image captions
-          { type: ContentPartType.IMAGE, value: 'Minh họa bảng chữ số La Mã', imageUrl: 'https://picsum.photos/400/200?random=4', alt: 'Minh họa bảng chữ số La Mã' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa đồng tiền Việt Nam', imageUrl: 'https://picsum.photos/400/200?random=5', alt: 'Minh họa đồng tiền Việt Nam' },
           { type: ContentPartType.IMAGE, value: 'Minh họa hệ nhị phân', imageUrl: 'https://picsum.photos/400/200?random=6', alt: 'Minh họa hệ nhị phân' },
         ],
       },
@@ -178,6 +232,7 @@ $$
 \\begin{array}{ccccccc}\\circ & \\circ & \\circ & \\circ & \\circ & \\circ & \\dots \\cr 0 & 1 & 2 & 3 & 4 & 5 & \\dots\\end{array}
 $$
 Trên tia số, điểm biểu diễn số tự nhiên $a$ gọi là điểm $a$. Chẳng hạn, điểm $3$, điểm $6$, ...` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa tia số', imageUrl: 'https://picsum.photos/400/200?random=7', alt: 'Minh họa tia số' },
           { type: ContentPartType.EXAMPLE, label: 'HD1', value: 'Trong hai điểm $5$ và $8$ trên tia số, điểm nào nằm bên trái, điểm nào nằm bên phải điểm kia?' },
           { type: ContentPartType.EXAMPLE, label: 'HD2', value: 'Điểm biểu diễn số tự nhiên nào nằm ngay bên trái điểm $8$?' },
           { type: ContentPartType.EXAMPLE, label: 'HD3', value: 'Cho $n$ là một số tự nhiên nhỏ hơn $7$. Theo em, điểm $n$ nằm bên trái hay bên phải điểm $7$?' },
@@ -196,6 +251,7 @@ b) Trên tia số (nằm ngang), hai điểm $m$ và $n$, điểm nào nằm tr�
 Số tiền thu được vào buổi sáng nhiều hơn vào buổi chiều;
 Số tiền thu được vào buổi tối ít hơn vào buổi chiều.
 Hãy so sánh số tiền thu được (đều là các số tự nhiên) của cửa hàng đó vào buổi sáng và buổi tối.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa so sánh số', imageUrl: 'https://picsum.photos/400/200?random=8', alt: 'Minh họa so sánh số' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'Các kí hiệu "<" và ">"' },
           { type: ContentPartType.TEXT, value: `
 *   Ta còn dùng kí hiệu $a \\le b$ (đọc là "$a$ nhỏ hơn hoặc bằng $b$") để nói "$a$ không lớn hơn $b$".
@@ -212,9 +268,6 @@ a) $M = \\{x \\in N \\mid 10 \\le x < 15\\}$;
 b) $K = \\{x \\in N^* \\mid x \\le 3\\}$;
 c) $L = \\{x \\in N \\mid x \\le 3\\}$.` },
           { type: ContentPartType.EXERCISE, label: '1.16', value: `Ba bạn An, Bình, Cường đứng định một cây sào thẳng đứng rồi đánh dấu chiều cao của các bạn lên đó bởi ba điểm. Cường đặt tên cho các điểm đó theo thứ tự từ dưới lên là $A, B, C$ và giải thích rằng điểm $A$ ứng với chiều cao của bạn An, $B$ ứng với chiều cao của bạn Bình và $C$ ứng với chiều cao của bạn Cường. Biết rằng An cao $150$ cm, Bình cao $153$ cm, Cường cao $148$ cm. Theo em, Cường giải thích như thế có đúng không? Nếu không thì phải sửa như thế nào cho đúng?` },
-          // Added 'value' property for image captions
-          { type: ContentPartType.IMAGE, value: 'Minh họa tia số', imageUrl: 'https://picsum.photos/400/200?random=7', alt: 'Minh họa tia số' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa so sánh số', imageUrl: 'https://picsum.photos/400/200?random=8', alt: 'Minh họa so sánh số' },
         ],
       },
     ],
@@ -244,6 +297,7 @@ Cho hai số tự nhiên $a$ và $b$ ($b \\neq 0$).
 Nếu số tự nhiên $k$ sao cho $a = kb$ thì ta nói $a$ chia hết cho $b$ và kí hiệu là $a \\vdots b$.
 Nếu $a$ không chia hết cho $b$ ta kí hiệu là $a \\not\\vdots b$.` },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ', value: '$15 \\vdots 3$' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa ước và bội', imageUrl: 'https://picsum.photos/400/200?random=9', alt: 'Minh họa ước và bội' },
           { type: ContentPartType.EXERCISE, label: '', value: `Tìm kí hiệu thích hợp $(\\vdots, \\not\\vdots)$ thay cho dấu "?":
 $24 \\ ? \\ 6 \\quad 45 \\ ? \\ 10 \\quad 35 \\ ? \\ 5 \\quad 42 \\ ? \\ 4$.` },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ 1', value: `Nhân dịp sinh nhật, mẹ cho Việt 12 gói kẹo để liên hoan với các bạn, mỗi gói có 35 chiếc. Biết lớp Việt có 5 tổ, hỏi Việt có thể chia đều số kẹo cho các tổ không?
@@ -257,6 +311,7 @@ Ta kí hiệu $U(a)$ là tập hợp các ước của $a$ và $B(b)$ là tập 
           { type: ContentPartType.NOTE, label: 'Tính chất 1', value: `
 *   Nếu $a \\vdots m$ và $b \\vdots m$ thì $(a+b) \\vdots m$.
 *   Nếu $a \\vdots m, b \\vdots m$ và $c \\vdots m$ thì $(a+b+c) \\vdots m$.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa số chia hết', imageUrl: 'https://picsum.photos/400/200?random=10', alt: 'Minh họa số chia hết' },
           { type: ContentPartType.NOTE, label: 'Chú ý', value: 'Tính chất 1 cũng đúng với một hiệu, chẳng hạn $30 \\vdots 3$ và $18 \\vdots 3$, suy ra $(30 - 18) \\vdots 3$.' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
           { type: ContentPartType.EXERCISE, label: '2.1', value: 'Hãy tìm các ước của mỗi số sau:\na) $30$; $35$; $17$.\nb) $16$; $24$; $35$.' },
@@ -267,9 +322,6 @@ b) $y \\in U(50)$ và $y > 5$.` },
           { type: ContentPartType.EXERCISE, label: '2.4', value: `Không thực hiện phép tính, hãy cho biết tổng nào sau đây chia hết cho 5:
 a) $15 + 1\\ 975 + 2\\ 019$;
 b) $20 + 90 + 2\\ 025 + 2\\ 050$.` },
-          // Added 'value' property for image captions
-          { type: ContentPartType.IMAGE, value: 'Minh họa ước và bội', imageUrl: 'https://picsum.photos/400/200?random=9', alt: 'Minh họa ước và bội' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa số chia hết', imageUrl: 'https://picsum.photos/400/200?random=10', alt: 'Minh họa số chia hết' },
         ],
       },
       {
@@ -295,6 +347,7 @@ Ta nhận thấy các số 120 và 2010 có chữ số tận cùng là 0 đều 
 
 *   Các số có chữ số tận cùng là $0, 2, 4, 6, 8$ thì **chia hết cho 2** và chỉ những số đó mới chia hết cho 2.
 *   Các số có chữ số tận cùng là $0$ hoặc $5$ thì **chia hết cho 5** và chỉ những số đó mới chia hết cho 5.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa dấu hiệu chia hết', imageUrl: 'https://picsum.photos/400/200?random=11', alt: 'Minh họa dấu hiệu chia hết' },
           { type: ContentPartType.HEADING_PRIMARY, value: '2. DẤU HIỆU CHIA HẾT CHO 9, CHO 3' },
           { type: ContentPartType.TEXT, value: `Hà nhận thấy số 180 chia hết cho 9 và tổng các chữ số của nó là $1 + 8 + 0 = 9$ cũng chia hết cho 9. Liệu những số chia hết cho 9 đều có tính chất này không?` },
           { type: ContentPartType.EXAMPLE, label: 'Dấu hiệu chia hết cho 9', value: `
@@ -303,6 +356,7 @@ Cho các số $27; 82; 195; 234$.
 *   **HD4** Tính tổng các chữ số của mỗi số và xét tính chia hết cho $9$ của các tổng đó trong mỗi nhóm.
 
 Các số có tổng các chữ số chia hết cho $9$ thì **chia hết cho 9** và chỉ những số đó mới chia hết cho 9.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa số chia hết', imageUrl: 'https://picsum.photos/400/200?random=12', alt: 'Minh họa số chia hết' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
           { type: ContentPartType.EXERCISE, label: '2.10', value: 'Trong các số sau, số nào chia hết cho 2, số nào chia hết cho 5?\n$324; 248; 2\\ 020; 2\\ 025$.' },
           { type: ContentPartType.EXERCISE, label: '2.11', value: 'Trong các số sau, số nào chia hết cho 3, số nào chia hết cho 9?\n$450; 123; 2\\ 019; 2\\ 025$.' },
@@ -317,9 +371,6 @@ $= (2 \\times 99 + 3 \\times 9) + 9$.
 Tổng các chữ số: $2 + 3 + 4 = 9$.
 Vì số $234$ được viết thành tổng các chữ số của nó và một số chia hết cho $9$.
 Các số tự nhiên khác cũng như vậy. Từ đó suy ra dấu hiệu chia hết cho $9$ và cho $3$.` },
-          // Added 'value' property for image captions
-          { type: ContentPartType.IMAGE, value: 'Minh họa dấu hiệu chia hết', imageUrl: 'https://picsum.photos/400/200?random=11', alt: 'Minh họa dấu hiệu chia hết' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa số chia hết', imageUrl: 'https://picsum.photos/400/200?random=12', alt: 'Minh họa số chia hết' },
         ],
       },
       {
@@ -344,6 +395,7 @@ Vậy, số 11 và số 10 có gì khác nhau, điều này có liên quan gì �
           { type: ContentPartType.TEXT, value: `
 *   **Số nguyên tố** là số tự nhiên lớn hơn 1, chỉ có hai ước là 1 và chính nó.
 *   **Hợp số** là số tự nhiên lớn hơn 1, có nhiều hơn hai ước.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa phân tích thừa số nguyên tố', imageUrl: 'https://picsum.photos/400/200?random=13', alt: 'Minh họa phân tích thừa số nguyên tố' },
           { type: ContentPartType.NOTE, label: 'Ghi chú', value: 'Số 0 và số 1 không là số nguyên tố và không là hợp số.' },
           { type: ContentPartType.EXERCISE, label: 'Luyện tập 1', value: 'Em hãy tìm những thích hợp cho các số trong Bảng 2.1.' },
           { type: ContentPartType.EXAMPLE, label: 'Ví dụ 1', value: `Số nào dưới đây là số nguyên tố, số nào là hợp số? Vì sao?
@@ -365,6 +417,7 @@ $24 = 2 \\times 2 \\times 2 \\times 3 = 2^3 \\times 3$.` },
           { type: ContentPartType.EXERCISE, label: '', value: 'Bạn Việt phân tích số 60 ra thừa số nguyên tố và cho kết quả $60 = 3 \\times 4 \\times 5$. Kết quả của Việt đúng hay sai? Nếu sai, em hãy sửa lại cho đúng.' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'Phương pháp phân tích số ra thừa số nguyên tố bằng sơ đồ cây' },
           { type: ContentPartType.TEXT, value: 'Quá trình phân tích số 24 ra thừa số nguyên tố như trên có thể được trình bày dưới dạng một sơ đồ như Hình 2.2 gọi là **sơ đồ cây**.' },
+          { type: ContentPartType.IMAGE, value: 'Minh họa sơ đồ cây', imageUrl: 'https://picsum.photos/400/200?random=14', alt: 'Minh họa sơ đồ cây' },
           { type: ContentPartType.EXERCISE, label: '', value: 'Tìm các số còn thiếu trong phân tích số 18 ra thừa số nguyên tố theo sơ đồ cây ở Hình 2.3.' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'Phương pháp phân tích số ra thừa số nguyên tố bằng cột dọc' },
           { type: ContentPartType.TEXT, value: `Ta còn có thể phân tích một số ra thừa số nguyên tố theo sơ đồ cột dọc. Ví dụ, ta phân tích số 24 thành tích các thừa số nguyên tố theo cách làm như sau:
@@ -375,6 +428,7 @@ $3 | 3$
 $1$
 Vậy, $24 = 2 \\times 2 \\times 2 \\times 3 = 2^3 \\times 3$.
 Sơ đồ phân tích số 24 thành tích các thừa số nguyên tố như trên được gọi là **sơ đồ cột dọc**.` },
+          { type: ContentPartType.IMAGE, value: 'Minh họa cột dọc', imageUrl: 'https://picsum.photos/400/200?random=15', alt: 'Minh họa cột dọc' },
           { type: ContentPartType.EXERCISE, label: '', value: 'Tìm các số còn thiếu trong phân tích số 30 ra thừa số nguyên tố theo sơ đồ cột ở hình bên.' },
           { type: ContentPartType.HEADING_PRIMARY, value: 'BÀI TẬP' },
           { type: ContentPartType.EXERCISE, label: '2.17', value: 'Phân tích các số sau ra thừa số nguyên tố:\n$70; 115$.' },
@@ -395,10 +449,6 @@ _Bước 3._ Số nguyên tố tiếp theo là 3. Gạch tất cả các số l�
 _Bước 4._ Số nguyên tố tiếp theo là 5. Gạch tất cả các số lớn hơn 5 và là bội của 5.
 _Bước 5._ Số nguyên tố tiếp theo là 7. Gạch tất cả các số lớn hơn 7 và là bội của 7. Các số không bị gạch trong bảng chính là các số nguyên tố.
 Làm tương tự như việc dùng một cái sàng để loại bỏ số 1 và các hợp số. Do đó nó có tên là sàng Eratosthenes.` },
-          // Added 'value' property for image captions
-          { type: ContentPartType.IMAGE, value: 'Minh họa phân tích thừa số nguyên tố', imageUrl: 'https://picsum.photos/400/200?random=13', alt: 'Minh họa phân tích thừa số nguyên tố' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa sơ đồ cây', imageUrl: 'https://picsum.photos/400/200?random=14', alt: 'Minh họa sơ đồ cây' },
-          { type: ContentPartType.IMAGE, value: 'Minh họa cột dọc', imageUrl: 'https://picsum.photos/400/200?random=15', alt: 'Minh họa cột dọc' },
           { type: ContentPartType.IMAGE, value: 'Minh họa Sàng Eratosthenes', imageUrl: 'https://picsum.photos/400/200?random=16', alt: 'Minh họa Sàng Eratosthenes' },
         ],
       },
